@@ -1,0 +1,100 @@
+
+.header{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:1.5rem 5rem;
+   background: white;
+   position:fixed;
+   top: 0;
+   z-index: 1000;
+   box-sizing: border-box;
+
+}
+.headerlogo{
+   width: 10%;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: rgb(105, 105, 105);
+
+     &::first-letter{
+        color: red;
+     }
+
+
+}
+.headerlist{
+  width: 30%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 7rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+padding-inline-start: 0;
+  li{
+     a{
+        text-decoration: none;
+        color: rgb(80, 68, 68);
+        font-size: 1.6rem;
+
+     }
+  }
+
+}
+.headerbtn{
+   width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;
+    font-size: 1.6rem;
+    
+    a{
+        text-decoration: none;
+        color: rgb(80, 68, 68);
+
+     }
+     button{
+        background: #30475E;
+        color: white;
+        margin: 0;
+        border: 0;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+     }
+
+}
+.carticon{
+   font-size: 2.5rem;
+   position: relative;
+   margin-top: 1rem;
+     span{
+      min-width: 2rem;
+       font-size: 1.2rem;
+       position: absolute;
+       background: red;
+       border-radius: 50%;
+       color: white;
+       top: -8px;
+       right: -15px;
+       padding: .1rem;
+       text-align: center;
+   }
+   a{
+      color: black;
+   }
+  }
+  .active{
+   border-bottom: 1px solid red;
+   color: red;
+  }
+
+  
+
+ 

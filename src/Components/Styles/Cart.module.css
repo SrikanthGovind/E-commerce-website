@@ -1,0 +1,138 @@
+.CartWrapper{
+    display: flex;
+}
+
+.cart{
+    width:75%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.para{
+    font-size: 5rem;
+    text-align: center;
+    margin-block-start: 30rem;
+    margin-block-end: 0;
+}
+.head{
+    text-align: center;
+    font-size: 3rem;
+    margin-block-start: 0rem;
+}
+
+.cartTotal {
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+  }
+  
+  .cartTotalTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .cartTotalDetails {
+    margin-top: 15px;
+
+  }
+  
+  .cartTotalRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cartTotalRow span {
+    font-size: 16px;
+  }
+  
+  .grandTotal {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .checkoutButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 3rem;
+  }
+  
+  .checkoutButton:hover {
+    background-color: #218838;
+  }
+  
+  .para {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .head {
+    text-align: center;
+    font-size: 24px;
+    color: #28a745;
+    cursor: pointer;
+  }
+
+  .cartHead{
+    font-size: 1.4rem;
+    margin-bottom: 10rem;
+    .item{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style-type: none;
+        padding-bottom: 1rem;
+    }
+  }
+  .cartmessage {
+    background-color: #28a745;  
+    color: white;  
+    font-size: 1.5rem;  
+    font-weight: bold;  
+    padding: 15px 30px;  
+    border-radius: 8px; 
+    text-align: center;  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);    
+    width: 20%;
+    position: fixed;
+    top: 80vh;
+    left: 40%;
+    margin: 2rem auto;
+    opacity: 0;
+    animation: slideUp 0.5s ease-out forwards;
+       
+  }
+  @keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

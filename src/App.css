@@ -1,0 +1,12 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 68.5%;
+    font-family: "Atma", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#root{
+    width: 100%; 
+}

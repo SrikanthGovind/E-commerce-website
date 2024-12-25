@@ -1,0 +1,223 @@
+.Emptymessage{
+    
+   font-size: 2.5rem;
+   text-align: center;
+    a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #28a745;
+    }
+}
+.RentalContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .DetailsWrapper {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    .Title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  
+    .ProductWrapper {
+      display: flex;
+      gap: 30px;
+      
+      .Image {
+        width: 50%;
+        height:40rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+          width: 70%;
+          height: 70%;
+
+        }
+      }
+      
+      .Description {
+        flex-grow: 1;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        .Detail {
+          margin-bottom: 20px;
+          
+          h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+          }
+          
+          p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.5;
+          }
+        }
+        
+        .Reviews {
+          margin-top: 20px;
+          
+          p {
+            font-size: 1.5rem;
+            color: #ff9800;
+            font-weight: bold;
+          }
+        }
+
+            
+    .RentalPrice {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      
+      .Price {
+        color: #f39c12;
+      }
+      
+      .PerDay {
+        font-size: 1rem;
+        color: #888;
+        font-weight: normal;
+      }
+    }
+
+        .rentalPeriod{
+            label{
+                margin: 0 1rem;
+                font-size: 1.5rem;
+                color:#28a745        
+               }
+        }
+        .rentalCharges{
+            p{
+                font-size: 1.5rem;
+                span{
+                    font-size: 1.7rem;
+                    color: #ff9900bb;
+                }
+            }
+        }
+      }
+    }
+  }
+  
+  .PriceDetails {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+
+    .costlist{
+        ul{
+            padding: 0;
+            li{
+                padding: .5rem;
+                font-size: 1.2rem;
+                list-style-type: none;
+                border-bottom: 1px solid rgb(149, 145, 145);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+     
+    .Terms{
+        margin-block: 2rem;
+            li{
+                list-style-type: number;
+                font-size: 1.2rem;
+            }
+            .agree{
+                display: flex;
+                P{
+                    font-size: 1rem;
+                }
+            }
+         
+    }
+   
+    .RentButton {
+      button {
+        background-color: #28a745;
+        color: white;
+        font-size: 1.2rem;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease;
+
+        &:disabled{
+          background: grey
+        }
+        
+      }
+    }
+  }
+  .confirmation {
+    background-color: #28a745;  
+    color: white;  
+    font-size: 1.5rem;  
+    font-weight: bold;  
+    padding: 15px 30px;  
+    border-radius: 8px; 
+    text-align: center;  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);    
+    width: 40%;
+    margin: 5rem auto;
+    opacity: 0;
+    animation: slideUp 0.5s ease-out forwards;
+       
+  }
+  @keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40px; 
+  left: 40px;
+  cursor: pointer; 
+  font-size: 2rem;
+  background: rgb(227, 227, 227);
+  padding: .2rem 2rem;
+border-radius: 2rem; 
+}

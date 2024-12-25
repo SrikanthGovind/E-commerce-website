@@ -1,0 +1,72 @@
+.aside{
+    width: 15%;
+    height: 100vh;
+    background: #F1F1F1;
+    position:fixed;
+    top: 5rem;
+ overflow: hidden;
+
+
+    ul{
+        height: 100%;
+        padding: 3rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        li{
+            list-style-type: none;
+            font-size: 1.6rem;
+           width: 100%;
+           display: flex;
+           align-items: center;
+           padding:2rem 0rem 2rem 0;
+           gap: 2.5rem;
+           cursor: pointer; 
+           transition: background 0.2s ease;
+           span{
+            font-size: 2.2rem;
+            margin-left: 2rem;
+           }
+        }
+    }
+    .cateogorylist{
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    .icon{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2.5rem;
+    }
+
+    .item{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin-left: 8rem;
+    }
+    .iconcollapse{
+        margin-left: 6rem;
+        text-align: end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: center;
+        transition: transform 0.5s ease;
+      
+    }
+    .iconcollapseactive{
+        margin-left: 6rem;
+        text-align: end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: center;
+        transition: transform 0.5s ease;
+        transform: rotate(180deg);
+    }
+}
